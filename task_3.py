@@ -16,13 +16,13 @@ value1 = "1/2"
 value2 = "1/3"
 
 
-def gcd_caluclation(devider1: int, devider2: int) -> int: 
-    if devider1 > devider2: 
-        temp = devider2 
+def gcd_caluclation(numerator: int, devider: int) -> int: 
+    if numerator > devider: 
+        temp = devider 
     else: 
-        temp = devider1 
+        temp = numerator 
     for i in range(1, temp + 1): 
-        if devider1 % i == 0 and devider2 % i == 0: 
+        if numerator % i == 0 and devider % i == 0: 
             gcd = i 
     return gcd 
 
