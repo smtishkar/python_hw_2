@@ -26,13 +26,13 @@ def gcd_caluclation(numerator: int, devider: int) -> int:
             gcd = i 
     return gcd 
 
-def lcm_calculation(numerator: int, devider: int) -> int : 
-    if numerator > devider:
-        greater = numerator
+def lcm_calculation(devider1: int, devider2: int) -> int : 
+    if devider1 > devider2:
+        greater = devider1
     else:
-        greater = devider
+        greater = devider2
     while True:
-        if greater % numerator == 0 and greater % devider == 0:
+        if greater % devider1 == 0 and greater % devider2 == 0:
             lcm = greater
             break
         greater +=1
