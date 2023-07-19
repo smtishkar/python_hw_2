@@ -17,7 +17,7 @@ hex_values_dict = {
 }
 
 
-def hex_additiona_numbers_receive (remainder_of_division):
+def hex_additiona_numbers_receive (remainder_of_division: int) -> str:
     for key in hex_values_dict:
         if key == remainder_of_division:
             return hex_values_dict[key]
